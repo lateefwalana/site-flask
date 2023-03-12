@@ -31,15 +31,19 @@
     </head>
     <body>
       <div class="container">
-        <h2 class="text-center mt-2 mb-4">Cyberglobe Ltd</h2>
+        <h2 class="text-center mt-2 mb-4">Cyberglobe</h2>
         <img id="banner" src="https://site-flask.lateefwalana.repl.co/static/people-working-on-computer.jpg" class="img-fluid" alt="People working">
-        <h1 class="text-center mt-2 mb-4">About Cyberglobe LTD</h1>
+        <h1 class="text-center mt-2 mb-4">About Us</h1>
         <p class="lead">
           Cyberglobe LTD is a trusted IT consultancy company that specializes in providing network design, implementation, and support services to businesses of all sizes. With our team of experienced network engineers and consultants, we offer innovative solutions that are tailored to our clients' specific needs and requirements. Our goal is to help our clients optimize their network infrastructure and achieve their business objectives. At Cyberglobe LTD, we pride ourselves on our commitment to excellence and our customer-centric approach, and we are always looking for ways to improve and innovate.
         </p>
         <h2 class="text-center mt-2 mb-4">Three simple services to Ease Your Mind</h2>
         <p class="bodytext">
-          TODO - show Services.
+          <div class="col">
+            {% for service in services %}
+            {% include 'services.html' %}
+            {% endfor %}
+          </div>
         </p>
         <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
